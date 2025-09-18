@@ -1,0 +1,26 @@
+[package]
+name = "clean_architecture"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.8", features = ["postgres", "runtime-tokio-rustls", "macros", "uuid", "chrono"] }
+dotenvy = "0.15"
+tower = "0.5"
+anyhow = "1"
+argon2 = "0.5.3"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "std", "json"] }
+tower-http = { version = "0.6", features = ["trace", "cors"] }
+secrecy = { version = "0.10", features = ["serde"] }
+uuid = { version = "1.18.0", features = ["serde", "v4"] }
+chrono = { version = "0.4.41", features = ["serde"] }
+thiserror = "2.0"
+async-trait = "0.1.89"
+axum-extra = { version = "0.10", features = ["cookie"] }
+time = "0.3"
+
