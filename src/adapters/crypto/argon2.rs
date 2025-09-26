@@ -3,9 +3,9 @@ use argon2::{
     password_hash::{PasswordHasher, SaltString, rand_core::OsRng},
 };
 
-use crate::use_cases::{
+use crate::{
     app_error::{AppError, AppResult},
-    user::UserCredentialsHasher,
+    use_cases::user::UserCredentialsHasher,
 };
 
 #[derive(Default)]

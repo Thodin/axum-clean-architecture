@@ -5,11 +5,9 @@ use uuid::Uuid;
 
 use crate::{
     adapters::persistence::PostgresPersistence,
+    app_error::{AppError, AppResult},
     entities::user::User,
-    use_cases::{
-        app_error::{AppError, AppResult},
-        user::UserPersistence,
-    },
+    use_cases::user::UserPersistence,
 };
 
 // User struct as stored in the db.

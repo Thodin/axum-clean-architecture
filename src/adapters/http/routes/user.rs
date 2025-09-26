@@ -6,8 +6,7 @@ use serde::{Deserialize, Serialize};
 use tracing::{info, instrument};
 
 use crate::{
-    adapters::http::app_state::AppState,
-    use_cases::{app_error::AppResult, user::UserUseCases},
+    adapters::http::app_state::AppState, app_error::AppResult, use_cases::user::UserUseCases,
 };
 
 pub fn router() -> Router<AppState> {

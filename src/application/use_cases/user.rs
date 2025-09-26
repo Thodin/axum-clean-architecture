@@ -4,7 +4,7 @@ use async_trait::async_trait;
 use secrecy::{ExposeSecret, SecretString};
 use tracing::{info, instrument};
 
-use crate::use_cases::app_error::AppResult;
+use crate::app_error::AppResult;
 
 #[async_trait]
 pub trait UserPersistence: Send + Sync {
