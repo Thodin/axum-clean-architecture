@@ -44,7 +44,7 @@ impl UserPersistence for PostgresPersistence {
         )
         .execute(&self.pool)
         .await
-        .map_err(AppError::Database)?;
+        .map_err(AppError::from)?;
 
         Ok(())
     }
